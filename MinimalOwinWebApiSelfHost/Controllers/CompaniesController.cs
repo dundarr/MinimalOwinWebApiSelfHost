@@ -22,7 +22,7 @@ namespace MinimalOwinWebApiSelfHost.Controllers
             return _Db.Companies;
         }
 
-
+        //http://localhost:8080/api/companies/1
         public async Task<Company> Get(int id)
         {
             var company = await _Db.Companies.FirstOrDefaultAsync(c => c.Id == id);
